@@ -209,7 +209,7 @@ import '../../../components/style.css'
                              </div>
                                <div className="row row-cols-12 w-100 m-1">
                                    <div className="col col-auto">
-                                       <button className="btn btn-primary fw-bold">
+                                       <button className="btn btn-outline-primary fw-bold">
                                         Create
                                        </button>
                                    </div>
@@ -220,7 +220,7 @@ import '../../../components/style.css'
                                     <span>
                                         Already have account ?
                                         </span>
-                                    <button className="m-1 btn btn-secondary fw-bold">
+                                    <button className="m-1 btn btn-outline-dark fw-bold">
                                         Log in
                                         </button>
                                 </div>

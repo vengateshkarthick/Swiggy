@@ -2,7 +2,8 @@ import React from 'react'
 import Searchbar from './serachBox/Searchbar'
 import Itemgrid from './itemGrid/index'
 import header from '../../images/header.png'
-const Maincontent = () => {
+import { MaincontentProvider } from './useMaincontent'
+const View = () => {
   return (
     <>
       <div className="container-fluid d-flex flex-column">
@@ -23,4 +24,10 @@ const Maincontent = () => {
     </>
   )
 }
-export default Maincontent
+export default () => {
+  return (
+    <MaincontentProvider>
+      <View/>
+    </MaincontentProvider>
+  )
+}

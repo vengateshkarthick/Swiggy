@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { MaincontentContext } from "../useMaincontent";
 interface searchBarprops {
   searchapi?: (search: string) => any;
 }
 const Searchbar = (props: searchBarprops) => {
-  const [searchText, setSearchtext] = useState<string | undefined>("");
+  const [text, setText] = useState('')
+  const {
+    searchText,
+    setSearchtext
+  } = useContext(MaincontentContext)
   return (
     <div 
       className="card border-0">
@@ -18,7 +23,7 @@ const Searchbar = (props: searchBarprops) => {
            
             <div className="col col-auto">
               <label className="form-label fs-4" htmlFor="srchInp">
-                Search delicious dishes!
+                Search hotels that served you better!
               </label>
             </div>
           </div>
@@ -30,8 +35,8 @@ const Searchbar = (props: searchBarprops) => {
                 placeholder="We delight to serve you"
                 id="srchInp"
                 className="form-control p-2 fs-5 fw-normal rounded-3"
-                value={searchText}
-                onChange={(e) => setSearchtext(e.target.value)}
+                value={text}
+                onChange={(e) => setText(e.target.value)}
                 style={{ color: "" }}
               />
             </div>
@@ -39,7 +44,8 @@ const Searchbar = (props: searchBarprops) => {
               <button
                 type="button"
                 className="btn fw-normal fs-5 btn-outline-success rounded-4"
-              >
+                onClick={ ()=> setSearchtext(text)}
+             >
                 {"Search "}
               </button>
             </div>
