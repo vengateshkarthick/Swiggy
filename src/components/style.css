@@ -44,13 +44,18 @@ body .footer ul li:hover {
   color: blue;
 }
 
+#signin .card {
+  border: 1px solid #f5f5f5 !important;
+  border-radius: 18px !important;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px 1px #f5f5f5 !important;
+}
 #signin .img {
   height: "50vh";
   width: "90%";
 }
 #signin .form {
-  overflow: auto;
-  height: 90%;
+  height: 100%;
 }
 #signin .form input {
   border-top: none;
@@ -58,4 +63,29 @@ body .footer ul li:hover {
   border-right: none;
   border-bottom: 2px solid #c4b7b7;
   border-radius: 2px;
+}
+
+.res-details {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.res-details .menu {
+  border-right: 1px solid #f5f5f5;
+}
+.res-details .menu ul {
+  display: flex;
+  flex-direction: column;
+}
+.res-details .menu .active {
+  border-right: 1px solid #3db34a;
+  border-width: 4px;
+  color: #3db34a;
+}
+.res-details .mnu_list {
+  list-style-type: none;
+  cursor: pointer;
+  border: 4px solid white;
+}
+.res-details .mnu_list:hover {
+  color: #3db34a;
 }/*# sourceMappingURL=style.css.map */

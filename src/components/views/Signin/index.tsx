@@ -6,28 +6,12 @@ import '../../../components/style.css'
         <div className="container-fluid" id='signin'>
             <div className="card ">
                 
-                <div className='card-body d-flex  align-items-center w-100'>
-                        <div 
-                           style={{
-                            width: 'auto',
-                            flexBasis: '50%',
-                            height: '70%'
-                        }}>
-                            <img 
-                              src={logo} 
-                              alt="Signin Logo" 
-                              className='img' 
-                              style={{
-                                  width: '100%',
-                                  height: '500px'
-
-                              }}
-                            />
-                        </div>
+                <div className='card-body d-flex  flex-wrap align-items-center w-100'>
+                        
                         <div
                          style={{
                             height: '80vh',
-                            flexBasis: '50%',
+                            flexBasis: '100%',
                             //backgroundColor: '#3db34a',
                             //  color: 'white'
                          }}
@@ -46,184 +30,224 @@ import '../../../components/style.css'
 
                                             }}
                                         >
-                                            Sign in
+                                            Create your account
                                         </h4>
                                     </legend>
                                 </fieldset>
-                                <div 
-                                  className='row row-cols-12  m-1'
-                                  
-                                  >
-                                    <div className="col col-auto">
-                                        <label 
-                                          htmlFor="firstname" 
-                                          style={{
-                                              fontSize: '1.25rem'
-                                          }}
-                                        />
-                                            Enter your First Name
-                                            <input 
-                                            type="text" 
-                                            className='form-control p-2 p-1'
+                            <div 
+                               className='d-flex  justify-content-between flex-wrap'
+                               style={{
+                                   width: '60%'
+                               }}
+                            
+                            >
+                                    <div 
+                                    className='row row-cols-12  m-1'
+                                    
+                                    >
+                                        <div className="col col-auto">
+                                            <label 
+                                            htmlFor="firstname" 
                                             style={{
-                                                margin: '1%'
-                                            }} 
-                                            name="firstname" 
-                                            id="firstname" />
-                                    </div>
-                                </div>
-                                <div 
-                                className='row row-cols-12 m-1'
-                               
-                                >
-                                    <div className="col col-auto">
-                                        <label 
-                                          className='mb-1' 
-                                          htmlFor="lastname"
-                                          style={{
-                                                fontSize: '1.25rem'
+                                                fontSize: '1rem'
                                             }}
-                                          />
-                                            Enter your Last Name
-                                            <input 
-                                            type="text" 
-                                            className='form-control p-2' 
+                                            >
+                                                Enter your First Name
+                                                <input 
+                                                type="text" 
+                                                className='form-control p-2 p-1'
                                                 style={{
                                                     margin: '1%'
                                                 }} 
-                                            name="lastname" 
-                                            id="lastname" />
-                                        
+                                                name="firstname" 
+                                                id="firstname" />
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                                 <div 
-                                  className='row row-cols-12  m-1'
-                                  
-                                  >
-                                    <div className="col col-auto">
-                                        <label 
-                                          htmlFor="mailid1" 
-                                          style={{
-                                              fontSize: '1.25rem'
-                                          }}
-                                        />
-                                            Enter your Mailid
-                                            <input 
-                                            type="email" 
-                                            className='form-control p-2 '
+                                    <div 
+                                    className='row row-cols-12 m-1'
+                                
+                                    >
+                                        <div className="col col-auto">
+                                            <label 
+                                            className='mb-1' 
+                                            htmlFor="lastname"
                                             style={{
-                                                margin: '1%'
-                                            }} 
-                                            name="mailid1" 
-                                            id="mailid1" />
+                                                    fontSize: '1rem'
+                                                }}
+                                            >
+                                                Enter your Last Name
+                                                <input 
+                                                type="text" 
+                                                className='form-control p-2' 
+                                                    style={{
+                                                        margin: '1%'
+                                                    }} 
+                                                name="lastname" 
+                                                id="lastname" />
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div 
-                                  className='row row-cols-12  m-1'
-                                  
-                                  >
-                                    <div className="col col-auto">
-                                        <label 
-                                          htmlFor="mailid2" 
-                                          style={{
-                                              fontSize: '1.25rem'
-                                          }}
-                                        />
-                                            Renter your Mailid
-                                            <input 
-                                            type="email" 
-                                            className='form-control p-2 '
-                                            style={{
-                                                margin: '1%'
-                                            }} 
-                                            name="mailid2" 
-                                            id="mailid2" />
-                                    </div>
-                                </div>
-                                <div 
-                                  className='row row-cols-12  m-1'
-                                  
-                                  >
-                                    <div className="col col-auto">
-                                        <label 
-                                          htmlFor="password1" 
-                                          style={{
-                                              fontSize: '1.25rem'
-                                          }}
-                                        />
-                                            Enter your Password
-                                            <input 
-                                            type="password" 
-                                            className='form-control p-2 '
-                                            style={{
-                                                margin: '1%'
-                                            }} 
-                                            name="password1" 
-                                            id="password1" />
-                                    </div>
-                                </div>
-                                <div 
-                                  className='row row-cols-12 m-1'
-                                  
-                                  >
-                                    <div className="col col-auto">
-                                        <label 
-                                          htmlFor="password2" 
-                                          style={{
-                                              fontSize: '1.25rem'
-                                          }}
-                                        />
-                                            Renter your Password
-                                            <input 
-                                            type="email" 
-                                            className='form-control p-2 '
-                                            style={{
-                                                margin: '1%'
-                                            }} 
-                                            name="password2" 
-                                            id="password2" />
-                                    </div>
-                                </div>
-                            <div
-                                className='row row-cols-12  m-1'
+                                   className='d-flex  justify-content-between flex-wrap'
+                                   style={{
+                                       width: '60%'
+                                   }}
+                                
+                                >
 
-                            >
-                                <div className="col col-auto">
-                                    <label
-                                        htmlFor="phno1"
-                                        style={{
-                                            fontSize: '1.25rem'
-                                        }}
-                                    />
-                                            Enter your Phone number
-                                            <input
-                                                type="tel"
+                                
+                                    <div 
+                                      className='row row-cols-12  m-1'
+                                    
+                                    >
+                                        <div className="col col-auto">
+                                            <label 
+                                            htmlFor="mailid1" 
+                                            style={{
+                                                fontSize: '1rem'
+                                            }}
+                                            >
+                                                Enter your Mailid
+                                                <input 
+                                                type="email" 
                                                 className='form-control p-2 '
                                                 style={{
                                                     margin: '1%'
-                                                }}
-                                                name="phno1"
-                                                id="phno1"
-                                             />
-                                     </div>
-                             </div>
-                               <div className="row row-cols-12 w-100 m-1">
-                                   <div className="col col-auto">
-                                       <button className="btn btn-outline-primary fw-bold">
-                                        Create
-                                       </button>
-                                   </div>
+                                                }} 
+                                                name="mailid1" 
+                                                id="mailid1" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div 
+                                    className='row row-cols-12  m-1'
                                     
-                               </div>
-                                <div className="row row-cols-12 m-1">
-                                <div className="col col-auto">
-                                    <span>
-                                        Already have account ?
-                                        </span>
-                                    <button className="m-1 btn btn-outline-dark fw-bold">
-                                        Log in
-                                        </button>
+                                    >
+                                        <div className="col col-auto">
+                                            <label 
+                                            htmlFor="mailid2" 
+                                            style={{
+                                                fontSize: '1rem'
+                                            }}
+                                            >
+                                                Renter your Mailid
+                                                <input 
+                                                type="email" 
+                                                className='form-control p-2 '
+                                                style={{
+                                                    margin: '1%'
+                                                }} 
+                                                name="mailid2" 
+                                                id="mailid2" />
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div 
+                                   className='d-flex  justify-content-between flex-wrap'
+                                   style={{
+                                       width: '60%'
+                                   }}
+                                
+                                >
+                                    <div 
+                                        className='row row-cols-12  m-1'
+                                        
+                                        >
+                                        <div className="col col-auto">
+                                            <label 
+                                                htmlFor="password1" 
+                                                style={{
+                                                    fontSize: '1rem'
+                                                }}
+                                            >
+                                                Enter your Password
+                                                <input 
+                                                type="password" 
+                                                className='form-control p-2 '
+                                                style={{
+                                                    margin: '1%'
+                                                }} 
+                                                name="password1" 
+                                                id="password1" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div 
+                                        className='row row-cols-12 m-1'
+                                        
+                                        >
+                                        <div className="col col-auto">
+                                            <label 
+                                                htmlFor="password2" 
+                                                style={{
+                                                    fontSize: '1rem'
+                                                }}
+                                            >
+                                                Renter your Password
+                                                <input 
+                                                type="email" 
+                                                className='form-control p-2 '
+                                                style={{
+                                                    margin: '1%'
+                                                }} 
+                                                name="password2" 
+                                                id="password2" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div 
+                                   className='d-flex  justify-content-between flex-wrap'
+                                   style={{
+                                       width: '60%'
+                                   }}
+                                
+                                >
+                                    <div
+                                        className='row row-cols-12  m-1'
+
+                                    >
+                                        <div className="col col-auto">
+                                            <label
+                                                htmlFor="phno1"
+                                                style={{
+                                                    fontSize: '1rem'
+                                                }}
+                                            >
+                                                    Enter your Phone number
+                                                    <input
+                                                        type="tel"
+                                                        className='form-control p-2 '
+                                                        style={{
+                                                            margin: '1%'
+                                                        }}
+                                                        name="phno1"
+                                                        id="phno1"
+                                                    />
+                                            </label>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="row row-cols-12 w-100 m-1">
+                                    <div className="col col-auto">
+                                        <button className="btn btn-outline-primary fw-bold">
+                                            Create
+                                        </button>
+                                    </div>
+                                        
+                                </div>
+                                    <div className="row row-cols-12 m-1">
+                                    <div className="col col-auto">
+                                        <span>
+                                            Already have account ?
+                                            </span>
+                                        <button className="m-1 btn btn-outline-dark fw-bold">
+                                            Log in
+                                            </button>
+                                    </div>
                                 </div>
                             </form>
 

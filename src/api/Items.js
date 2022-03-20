@@ -37,8 +37,39 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid1',
             can_take_order: true,
-            take_away: true
-            
+            take_away: true,
+            menu_items: [
+                {
+                        name: 'Staters',
+                        id: 'starters',
+                        hash: 'mnu_1'
+                },
+                {
+                        name: 'Combo',
+                        id: 'combo',
+                        hash: 'mnu_2'
+                },
+                {
+                        name: 'South Indian',
+                        id: 'south_indian',
+                        hash: 'mnu_3'
+                },
+                {
+                        name: 'Chinese',
+                        id: 'chinese',
+                        hash: 'mnu_4',
+                },
+                {
+                        name: 'Drinks',
+                        id: 'drinks',
+                        hash: 'mnu_5',
+                },
+                {
+                        name: 'Snacks',
+                        id: 'snacks',
+                        hash: 'mnu_6',
+                },
+            ]
     },
     {
             hotel_name: 'StayorEat',
@@ -46,8 +77,8 @@ export const hotel_api = [
             average_oreder_completed: 105,
             hotel_id: 'htid2',
             can_take_order: true,
-            take_away: true
-            
+            take_away: true,
+            menu_items: []
     },
 
     {
@@ -56,7 +87,8 @@ export const hotel_api = [
             average_oreder_completed: 110,
             hotel_id: 'htid4',
             can_take_order: true,
-            take_away: true
+            take_away: true,
+            menu_items: []
             
     },
     {
@@ -65,7 +97,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid5',
             can_take_order: false,
-            take_away: false
+            take_away: false,
+            menu_items: []
             
     },
     {
@@ -74,7 +107,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid6',
             can_take_order: true,
-            take_away: true
+            take_away: true,
+            menu_items: []
             
     },
     {
@@ -83,7 +117,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid7',
             can_take_order: false,
-            take_away: false
+            take_away: false,
+            menu_items: []
             
     },
     {
@@ -92,7 +127,8 @@ export const hotel_api = [
             average_oreder_completed: 200,
             hotel_id: 'htid8',
             can_take_order: false,
-            take_away: false
+            take_away: false,
+            menu_items: []
             
     },
     
@@ -102,7 +138,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid10',
             can_take_order: true,
-            take_away: true
+            take_away: true,
+            menu_items: []
             
     },
     {
@@ -111,7 +148,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid11',
             can_take_order: true,
-            take_away: true
+            take_away: true,
+            menu_items: []
             
     },
     {
@@ -120,7 +158,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid12',
             can_take_order: false,
-            take_away: true
+            take_away: true,
+            menu_items: []
             
     },
 
@@ -130,7 +169,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid5',
             can_take_order: true,
-            take_away: true
+            take_away: true,
+            menu_items: []
             
     },
     {
@@ -139,7 +179,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid6',
             can_take_order: true,
-            take_away: true
+            take_away: true,
+            menu_items: []
             
     },
     {
@@ -148,7 +189,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid7',
             can_take_order: false,
-            take_away: false
+            take_away: false,
+            menu_items: []
             
     },
     {
@@ -157,7 +199,8 @@ export const hotel_api = [
             average_oreder_completed: 200,
             hotel_id: 'htid8',
             can_take_order: true,
-            take_away: false
+            take_away: false,
+            menu_items: []
             
     },
     
@@ -167,7 +210,8 @@ export const hotel_api = [
             average_oreder_completed: 100,
             hotel_id: 'htid10',
             can_take_order: false,
-            take_away: true
+            take_away: true,
+            menu_items: []
             
     },
 
